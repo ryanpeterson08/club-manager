@@ -29,4 +29,9 @@ export class TeamService {
                                   position: localUpdatedMember.position});
   }
 
+  deleteMember(localMemberToDelete){
+    var memberEntryInFirebase = this.getMembersById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
+
 }
