@@ -13,7 +13,6 @@ export class PositionPipe implements PipeTransform {
       for (var i = 0; i < input.length; i++) {
         if (input[i].position === "center") {
           output.push(input[i]);
-          console.log(output[i])
         }
       }
       return output;
