@@ -1,0 +1,10 @@
+<h4>Edit Member</h4>
+
+<label>New Member Name:</label>
+<input [(ngModel)]="selectedMember.name">
+<br>
+
+<label>New Member Position:</label>
+<input [(ngModel)]="selectedMember.position">
+
+<button (click)="beginUpdatingMember(selectedMember)">Update</button>

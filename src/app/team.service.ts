@@ -19,4 +19,14 @@ export class TeamService {
     return this.angularFire.database.object('/members/' + memberId);
   }
 
+  addMember(newMember: Team){
+    this.members.push(newMember);
+  }
+
+  updateMember(localUpdatedMember){
+    var memberEntryInFirebase = this.getMembersById(localUpdatedMember.$key);
+    memberEntryInFirebase.update({name: localUpdatedMember.name,
+                                  position: localUpdatedMember.position});
+  }
+
 }

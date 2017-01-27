@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add a New Member to the Team</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Member Name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div class="form-group">
+        <label>Member Position:</label>
+        <br>
+        <input #newPosition>
+      </div>
+      <button (click)="submitForm(newName.value, newPosition.value); newName.value=''; newPosition.value=''">Add</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-team></app-team>
+</div>
