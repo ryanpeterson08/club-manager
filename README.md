@@ -1,3 +1,13 @@
+# Club Manager
+
+####  Web app for managing clubs and teams 1/27/17
+
+#### By Ryan Peterson
+
+## Description
+
+Web app that allows user to read, create, update, and delete members
+
 # ClubManager
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
@@ -22,9 +32,34 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
+## Setup/Installation Requirements
+* Download or clone git repo at https://github.com/ryanpeterson08/club-manager
+* Run npm install
+* Run bower install
+* Create a Firebase Account/Database
+* Grab your api key provided to you by firebase and place it in a file called src/app/api-keys.ts
+* Run ng serve to start up the application
+
 ## Deploying to GitHub Pages
 
 Run `ng github-pages:deploy` to deploy to GitHub Pages.
+
+## Support and contact details
+
+Email: ryanpeterson08@gmail.com
+
+## Technologies Used
+
+* HTML/CSS
+* Javascript
+* Bootstrap
+* Angular 2
+* npm, bower
+
+### License
+
+Copyright (c) 2017 Ryan Peterson
+
 
 ## Further help
 

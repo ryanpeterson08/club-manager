@@ -1,0 +1,38 @@
+.container{
+  color: white;
+  background-image: url(http://www.hdwallpapers.in/walls/milky_way-wide.jpg);
+  background-repeat: no-repeat;
+}
+
+.links{
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  background-image: url(http://mcoceanacademic.com/wp-content/uploads/2014/07/Colorful-Star-Galaxy-Wallpaper-High-Definition.jpg);
+  position: relative;
+  text-align: center;
+}
+
+.links h4{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+#about-link{
+  margin-left: 25px;
+}
