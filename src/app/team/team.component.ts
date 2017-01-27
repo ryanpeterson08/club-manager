@@ -14,6 +14,7 @@ export class TeamComponent implements OnInit {
 
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByPosition: string = "all";
 
   constructor(private router: Router, private teamService: TeamService) { }
 
@@ -24,5 +25,9 @@ export class TeamComponent implements OnInit {
   goToDetailPage(clickedMember){
     this.router.navigate(['members', clickedMember.$key]);
   };
+
+  onChange(optionFromMenu){
+    this.filterByPosition = optionFromMenu;
+  }
 
 }

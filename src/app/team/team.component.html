@@ -1,6 +1,13 @@
 <h2>Team Members of Space Jame</h2>
 
-<div *ngFor="let member of members | async"  class="panel panel-default">
+<select (change)=onChange($event.target.value) class="form-control">
+  <option value="center">Center</option>
+  <option value="small forward">Small Forward</option>
+  <option value="shooting guard">Shooting Guard</option>
+  <option value="all" selected="selected">View All</option>
+</select>
+
+<div *ngFor="let member of members | async | position:filterByPosition"  class="panel panel-default">
   <div class="panel-body">
     <h3 (click)="goToDetailPage(member)">{{member.name}}</h3>
     <div *ngIf="currentRoute === '/admin'">
