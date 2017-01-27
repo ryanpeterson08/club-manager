@@ -1,0 +1,11 @@
+{ "members": [{
+    "name": "nada",
+    "position": "point guard"
+    }, {
+    "name": "zero",
+    "position": "small forward"
+      }, {
+    "title": "zilch",
+    "position": "Center"
+  }]
+}
