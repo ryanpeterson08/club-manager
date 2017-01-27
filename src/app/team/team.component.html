@@ -1,3 +1,7 @@
-<p>
-  team works!
-</p>
+<h2>Team Members of Team Monster</h2>
+
+<div *ngFor="let member of members | async" (click)="goToDetailPage(album)" class="panel panel-default">
+  <div class="panel-body">
+    <h3>name: {{member.name}} position: {{member.position}}</h3>
+  </div>
+</div>

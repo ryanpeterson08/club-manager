@@ -1,16 +1,23 @@
 import { Component, OnInit } from '@angular/core';
 import { Team } from '../team.model';
+import { Router } from '@angular/router';
+import { TeamService } from '../team.service';
+import { FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-team',
   templateUrl: './team.component.html',
-  styleUrls: ['./team.component.css']
+  styleUrls: ['./team.component.css'],
+  providers: [TeamService]
 })
 export class TeamComponent implements OnInit {
 
-  constructor() { }
+  members: FirebaseListObservable<any[]>;
+
+  constructor(private router: Router, private teamService: TeamService) { }
 
   ngOnInit() {
+    this.members = this.teamService.getMembers();
   }
 
 }
