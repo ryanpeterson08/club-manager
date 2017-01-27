@@ -15,4 +15,8 @@ export class TeamService {
     return this.members;
   }
 
+  getMembersById(memberId: string){
+    return this.angularFire.database.object('/members/' + memberId);
+  }
+
 }
