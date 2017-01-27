@@ -23,7 +23,28 @@ export class PositionPipe implements PipeTransform {
         }
       }
       return output;
-    } else {
+    }else if(desiredPosition === "point guard"){
+      for(var i = 0; i < input.length; i++){
+        if(input[i].position === "point guard"){
+          output.push(input[i]);
+        }
+      }
+      return output;
+    }else if(desiredPosition === "shooting guard"){
+      for(var i = 0; i < input.length; i++){
+        if(input[i].position === "shooting guard"){
+          output.push(input[i]);
+        }
+      }
+      return output;
+    }else if(desiredPosition === "power forward"){
+      for(var i = 0; i < input.length; i++){
+        if(input[i].position === "power forward"){
+          output.push(input[i]);
+        }
+      }
+      return output
+    }else {
       return input;
     }
   }
